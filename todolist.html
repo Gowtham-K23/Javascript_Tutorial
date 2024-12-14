@@ -1,0 +1,30 @@
+<div>
+    <center>
+        <h1>ToDo List</h1>
+        <br>
+        <input id = "box">
+        <button id = "add" onclick = "add()">Add</button>
+        <div id = "work" onclick = "deleteitem(event)"></div>
+    </center>
+
+</div>
+
+<script>
+
+    var inp = document.getElementById("box")
+
+    function add()
+    {
+        var wrk = inp.value
+        
+         var listitem = document.createElement("h2")
+         listitem.textContent = wrk
+         work.append(listitem)
+    }
+
+    function deleteitem(event)
+    {
+        event.target.remove()
+    }
+
+</script>

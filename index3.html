@@ -1,0 +1,31 @@
+<h1>Guess a number</h1>
+<input id = "box">
+<button onclick="check()">Check</button>
+<p id = "result">Initial score : 10</p>
+
+<script>
+
+var num1 = document.getElementById("box")
+var res = document.getElementById("result")
+var i
+var score = 10
+var rno = Math.floor(Math.random()*10)+1
+
+function check()
+{
+    
+    var gno = num1.value
+    console.log(rno)
+    if (rno == gno)
+    {
+        result.textContent = "score: "+score
+        alert("You won")
+    }
+    else
+    {
+        score = score - 1
+        result.textContent = "score: "+score
+    }
+}
+
+</script>

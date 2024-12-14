@@ -1,0 +1,24 @@
+<button onclick = "alertmsg()">show 1</button>
+<br>
+<br>
+<button id = "btn">show 2</button>
+
+<script>
+
+    function alertmsg()
+    {
+        alert("Hello")
+    }
+</script>
+
+<script>
+
+    var button = document.getElementById("btn")
+    button.addEventListener('click', function(){
+        alert("HIII")
+    })
+    button.addEventListener('mouseover', function(){
+        alert("HIII")
+    })
+
+</script>

@@ -1,0 +1,85 @@
+<p id = "one">
+    Hello
+</p>
+
+<script>
+    var para = document.getElementById("one")
+    console.log(para.textContent)
+    para.textContent = "Bye"
+</script>
+
+<h1 id = "title">
+    Hello world
+</h1>
+
+<script>
+    var h = document.getElementById("title")
+    h.textContent = "Bye world"
+</script>
+
+
+<h2 id = "title1">
+    Hello linkedin
+</h2>
+
+<button onclick="change()">change</button>
+
+<script>
+    var h2 = document.getElementById("title1")
+
+    function change()
+    {
+        h2.textContent = "Bye linkedin"
+    }
+</script>
+
+<br>
+<br>
+<br>
+
+
+<input id = "num1" value = "10">
+<input id = "num2" value = "20">
+<button onclick = "add()">Add</button>
+<p id = "result">Result</p>
+<script>
+    var a1 = document.getElementById("num1")
+    var a2 = document.getElementById("num2")
+    console.log(num1)
+    console.log(num2)
+
+    var a1box = Number(a1.value)
+    var a2box = Number(a2.value)
+    var res = document.getElementById("result")
+
+    function add()
+    {
+        var sum = a1box + a2box
+        res.textContent = sum
+    }
+</script>
+
+<br>
+<br>
+<br>
+
+
+<input id = "num3">
+<input id = "num4">
+<button onclick = "add1()">Add</button>
+<p id = "result1">Result</p>
+<script>
+    var a3 = document.getElementById("num3")
+    var a4 = document.getElementById("num4")
+    console.log(num3)
+    console.log(num4)
+    var res1 = document.getElementById("result1")
+
+    function add1()
+    {
+        var a3box = Number(a3.value)
+        var a4box = Number(a4.value)
+        var sum = a3box + a4box
+        res1.textContent = sum
+    }
+</script>
