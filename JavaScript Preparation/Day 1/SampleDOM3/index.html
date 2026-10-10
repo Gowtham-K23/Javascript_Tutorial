@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id = "title">Hello World</h1>
+
+    <p class = "text">FIRST</p>
+    <p class = "text">ECOND</p>
+
+    <img src = "cat.jpg" id = "cat" alt = "My Cat">
+
+    <script>
+        // getElementById
+        let heading = document.getElementById("title");
+        console.log(heading);
+
+        // getElementsByClassName
+        let ele = document.getElementsByClassName("text");
+        console.log(ele)
+
+        // getElementsByTagName
+        let para = document.getElementsByTagName("p");
+        console.log(para)
+
+        // querySelector
+        let element = document.querySelector(".text");
+        console.log(element)
+
+        // querySelectorAll
+        let elements = document.querySelectorAll(".text");
+        console.log(elements)
+
+        // innerText
+        console.log(heading.innerText)
+
+        // textContent
+        console.log(heading.textContent)
+
+        // innerHTML
+        console.log(heading.innerHTML)
+
+
+        // Change text
+        heading.innerText = "New Title";
+
+        // Change html 
+        heading.innerHTML = "<span>Updated</span>";
+
+        let headChange = document.getElementById("title")
+        headChange.style.color = "red";
+        headChange.style.backgroundColor = "black";
+        headChange.style.fontSize = "50px";
+
+        // get attribute
+        let image = document.getElementById("cat")
+        let source = image.getAttribute("src")
+        console.log(source);
+
+        // set attribute
+        image.setAttribute("src", "dog.jpg");
+        let s = image.getAttribute("src")
+        console.log(s)
+
+    </script>
+</body>
+</html>

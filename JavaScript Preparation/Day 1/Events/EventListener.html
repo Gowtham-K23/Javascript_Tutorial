@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "btn"> Click Me </button>
+
+    <div id="box" style="width:200px;height:200px;background:red;"></div>
+
+    <input type="text" id="inputBox">
+
+
+
+    <script>
+        // let button = document.getElementById("btn")
+
+        // button.addEventListener("click", function() {
+        //     alert("Button clicked...")
+        // })
+
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function() {
+            console.log("Button Clicked");
+        });
+
+        let box = document.getElementById("box");
+
+box.addEventListener("mouseenter", function() {
+    box.style.backgroundColor = "green";
+});
+
+box.addEventListener("mouseleave", function() {
+    box.style.backgroundColor = "red";
+});
+
+        let input = document.getElementById("inputBox");
+                    input.addEventListener("keydown", function(event) {
+                    console.log("Key Pressed:", event.key);
+        });
+
+    </script>
+</body>
+</html>
